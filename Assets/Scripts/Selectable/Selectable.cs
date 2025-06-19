@@ -17,12 +17,20 @@ namespace Selectable {
         
         [DoNotSerialize] public bool IsSelectable { get; set; }
 
-        private void Start() {
-            
+        public void Hover() {
+            Debug.Log("Hover");            
         }
 
-        private void Update() {
-            Debug.Log("Position: " + Mouse.current.position.ReadValue());
+        public void HoverExit() {
+            Debug.Log("HoverExit");
+        }
+
+        public void Click() {
+            Debug.Log("Click");
+        }
+
+        public void RightClick() {
+            Debug.Log("RightClick");
         }
     }
 }
